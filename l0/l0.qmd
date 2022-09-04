@@ -2,7 +2,7 @@
 title: "UX와 서비스 기획"
 subtitle: "L0 orientation"
 author: Minseop Lee(Programs in Cognitive Science, SNU)
-date: 2022-09-06
+date: Sep 6, 2022
 format:
   revealjs: 
     slide-number: true
@@ -15,7 +15,7 @@ resources:
   - demo.pdf
 ---
 
-## 강의를 시작하며
+### 강의를 시작하며
 
 <br/>
 
@@ -34,7 +34,7 @@ resources:
 
 ---
 
-## 강사소개
+### 강사소개
 
 
 - 서울대학교 자유전공학부(인지생물심리학, 경제학 전공)
@@ -48,7 +48,7 @@ resources:
 
 ---
 
-## 강의 소개 {auto-animate="true"}
+### 강의 소개 {auto-animate="true"}
 
 ::: {.fragment .fade-in}
 0. Orientation(L0)
@@ -60,12 +60,12 @@ resources:
 
 ---
 
-## 1. 서비스의 존재론(L1~2강)[^1],[^2]
+### 1. 서비스의 존재론(L1~2강)[^1],[^2]
 
 ::: incremental
 - 문화진화론 일반
-- 진화의 공간
-- 성공하는 서비스
+- 진화의 공간 속 서비스
+- 성공하는 서비스와 사용자 조사
 - 서비스와 인간과의 관계
 :::
 
@@ -74,7 +74,7 @@ resources:
 
 ---
 
-## 2. 서비스의 발생과 구조 그리고 진화(L3~4강)[^3],[^4]
+### 2. 서비스의 발생과 구조 그리고 진화(L3~4강)[^3],[^4]
 
 ::: incremental
 - 팀이 서비스를 만드는 과정, 진화의 관점에서 바라본 서비스 기획 방법론
@@ -87,7 +87,7 @@ resources:
 
 ---
 
-## 3. 서비스의 적응성(L5~6강)[^5],[^6]
+### 3. 서비스의 적응성(L5~6강)[^5],[^6]
 
 ::: incremental
 - 진화심리학과 서비스
@@ -100,7 +100,7 @@ resources:
 
 ---
 
-## 4. 서비스의 맥락성(L7~8강)[^7],[^8]
+### 4. 서비스의 맥락성(L7~8강)[^7],[^8]
 
 ::: incremental
 - 사회적 영향과 서비스
@@ -112,11 +112,11 @@ resources:
 
 ---
 
-## 강의방식 {.smaller}
+### 강의방식 {.smaller}
 
 ::: {.fragment .callout-tip}
 - 거꾸로 학습, 먼저 올린 자료를 보고 생각해오세요
-  - 에보클래스에 30분 이내의 짧은 영상을 올릴 예정, 수업 전까지 꼭 보고 오세요!(시청 여부 ✅)
+  - 에보클래스에 짧은 영상 업로드 예정, 수업 전까지 꼭 보고 오세요!(시청 여부 ✅)
 - 토론 중심, 정답은 없음, 손들고 이야기하면 더 좋습니다.
 - 강의는 덤. 참고자료도 시간이 되고 관심이 더 생기면 읽어보세요!
 :::
@@ -134,9 +134,9 @@ resources:
 
 ---
 
-## slido 테스트
+### slido 테스트
 
 
-<iframe src="https://wall.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL" width="600" height="400"></iframe>
+<iframe src="https://wall.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL" width="700" height="600"></iframe>
 
-<iframe src="https://app.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL/embed/polls/b86ce9f9-7661-4627-870c-38fa15d55048" width="300" height="400"></iframe>
+<iframe src="https://app.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL/embed/polls/b86ce9f9-7661-4627-870c-38fa15d55048" width="300" height="600"></iframe>

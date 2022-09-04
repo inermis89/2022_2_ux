@@ -16,8 +16,15 @@ resources:
   - demo.pdf
 ---
 
+### 강의 목표
 
-## 지난 강의 정리
+- 서비스가 인간과 어떤 관계를 맺을 수 있는지 이해한다.
+- 서비스의 공간에서 사용자 조사가 필요한 이유에 대해 이해한다.
+
+
+---
+
+### 지난 강의 정리
 
 ::: incremental
 - 서비스를 하나의 유기체와 같은 의미로 생각할 수 있음
@@ -26,12 +33,23 @@ resources:
 
 ---
 
-## 좋은 서비스와 나쁜 서비스를 가르는 기준에 대해서
+<br>
+<br>
+<br>
+
+::: {.r-stack}
+> "행복한 가정은 모두 모습이 비슷하고, 불행한 가정은 모두 제각각으로 불행을 안고 있다." 
+<br><br> 톨스토이 "안나 카레리나"의 첫 문장 
+:::
+
+---
+
+### 좋은 서비스와 나쁜 서비스를 가르는 기준에 대해서
 
 
 ---
 
-## 공생(Symbiosis)의 종류
+### 공생(Symbiosis)의 종류
 
 ::: incremental
 1. Mutualism(상리공생)
@@ -43,7 +61,7 @@ resources:
 
 ---
 
-## 1. Mutualism
+### 1. Mutualism
 
 <!-- 
 사례
@@ -51,7 +69,7 @@ resources:
 
 ---
 
-## 2. Commensalism
+### 2. Commensalism
 
 <!-- 
 사례
@@ -59,7 +77,7 @@ resources:
 
 ---
 
-## 3. Amensalism
+### 3. Amensalism
 
 <!--
 사례
@@ -67,7 +85,7 @@ resources:
 
 ---
 
-## 4. Paraticism
+### 4. Paraticism
 
 <!-- 
 사례
@@ -75,7 +93,7 @@ resources:
 
 ---
 
-## 5. Hostile symbiosis
+### 5. Hostile symbiosis
 
 <!-- 
 사례
@@ -84,5 +102,15 @@ resources:
 
 ---
 
-## 경사하강법
+### 경사하강법
 
+---
+
+### 유전자-문화 공진화 이론
+
+- 각종 편향들 
+
+- 내용편향
+- 맥락편향
+    - 명성편향
+    - 순응편향
