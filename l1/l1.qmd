@@ -1,0 +1,403 @@
+---
+title: "L1. Ontology of IT service"
+subtitle: "문화진화론과 진화의 공간 그리고 서비스"
+author: Minseop Lee(Programs in Cognitive Science, SNU)
+date: 2022-09-06(Tue)
+format:
+  revealjs: 
+    slide-number: true
+    # scrollable: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: UX와 서비스 기획
+resources:
+  - demo.pdf
+---
+
+## 강의 목표 {auto-animate="true"}
+
+::: incremental
+- 문화진화론이 무엇인지 이해하고 문화진화론적 관점에서 서비스를 이해한다.
+- 제품과 서비스의 공간이 얼마나 넓고 방대한지 이해하고 좋은 서비스를 찾기 위해 어떤 과정이 필요한지 생각해본다.
+:::
+
+. . .
+
+::: {.callout-note .fragment .fade-up}
+창업의 아이템이 꼭 IT 서비스일 필요는 없지만 이후부터는 편의를 위해 **'서비스'**라는 단어를 통해서 우리는 **'제품'**과 **'서비스'**를 모두 아우르는 의미로 사용할 것이다.
+:::
+
+
+---
+
+## 강의 순서
+
+<br/>
+<br/>
+
+:::{.fragment .highlight-blue}
+1. 문화진화론
+:::
+2. 진화의 공간 
+
+---
+
+## 문화진화론 일반
+
+::: incremental
+- 문화란 무엇인가?
+- Universal Darwinism
+:::
+
+---
+
+## 문화란 무엇인가?
+
+::: {.columns}
+
+::: {.column width="60%"}
+<br/>
+
+> “Examples of memes are tunes, ideas, catch-phrases, clothes fashions, ways of making pots or of building arches.” by Ricard Dawkins(1976)
+:::
+
+
+::: {.column width="40%"}
+<br/>
+
+![](https://pbs.twimg.com/profile_images/1094327574031945729/tU8wz8DL_400x400.jpg){fig-alt="Richard Dawkins"}
+:::
+
+:::
+
+
+---
+
+## 문화진화론이란?
+
+💡 보편 다윈주의(Universal Darwinism)
+
+::: incremental
+1. 변이
+2. 대물림
+3. 차별적 적합도
+:::
+
+::: {.fragment .fade-up}
+위의 **세 가지** 조건만 만족하면 그것이 **무엇이든** 자연선택에 의한 진화가 일어날 수 있다는 이론
+:::
+
+---
+
+### 문화진화론이란?
+
+- 사람들 사이의 사회적 학습에 의해 정보가 전달되는 과정 또한 보편 다윈주의를 따라 일어난다면 다윈주의적 문화진화가 가능함.
+
+- 내용 보충
+
+---
+
+## 문화진화론이 나오게 된 배경
+
+::: incremental
+- 진화론이 다윈에 의해 정립됨
+- 다윈의 진화론과 멘델의 유전학을 통합시킨 현대적 종합
+- 그러나 인간의 마음은 생물학적인 요인만으로 설명하기 어려움
+- 종교, 유행, 기술, 인공물 등
+:::
+
+---
+
+## 문화진화론의 사례
+
+::: incremental
+- 낙농업과 젖당분해효소
+![](https://i0.wp.com/blog.education.nationalgeographic.org/wp-content/uploads/2017/11/ex-lactoseintolerance-1125x692.jpg?resize=720%2C443&ssl=1){fig-alt="dairy farming and lactase persistence" width="800" .fragment}
+:::
+
+---
+
+## 문화진화론의 사례
+
+- 또 어떤 사례가 있을까?
+
+---
+
+## 문화의 힘
+
+![](https://ourworldindata.org/uploads/2018/11/Global-Taxa-Biomass.png){fig-alt="distribution of biomass"}
+
+::: footer
+참고자료 출처 : [Link](https://ourworldindata.org/life-on-earth)
+:::
+
+
+---
+
+## 성공의 기준 
+
+::: {.columns}
+
+::: {.column width="55%" .fragment}
+![](https://www.greenpeace.org/static/planet4-international-stateless/2018/07/Screen-Shot-2018-07-17-at-5.35.05-PM.png){fig-alt="terrestrial vertebrate biomass"}
+:::
+
+::: {.column width="45%" .incremental}
+- 기원전 10000년 가축을 처음 기르기 시작한뒤 육상 척추 동물의 분포 변화
+- 완전한 역전
+:::
+
+:::
+
+---
+
+## 인공물의 진화
+
+::: incremental
+- 인공물의 비중
+![](https://images.squarespace-cdn.com/content/v1/5a29de13e5dd5b5fb7021e6c/74943a73-845a-40b1-bd16-4fb602cf1f9a/Human-Made-Mass-Plastic-e1635787882516.png?format=2500w){fig-alt="plastic mass" .fragment}
+:::
+
+
+::: footer
+참고자료 출처 : [Link](https://www.newcapitalmgmt.com/news/visualizing-the-accumulation-of-human-made-mass-on-earth)
+:::
+
+---
+
+## 성공의 기준
+
+::: {.fragment .fade-in}
+![](img/anthropogenic_mass.png){fig-alt="anthropogenic mass" width="80%"}
+:::
+
+::: footer
+참고자료 출처 : [Link](https://www.newcapitalmgmt.com/news/visualizing-the-accumulation-of-human-made-mass-on-earth)
+:::
+
+---
+
+## IT 서비스의 지위
+
+::: incremental
+- 탄소의 양이 아니라 정보의 양으로 생각한다면 IT 서비스의 지위는 어느 정도일까?
+
+- 세계 최대 규모의 장서량을 자랑하는 미국 의회도서관이 200여 년에 걸쳐 수집한 자료보다 훨씬 많은 양의 자료를 15분 내 컴퓨터에 저장할 수 있다.
+
+- 실시간 통계사이트 ‘Worldometers’에 따르면, 현대인은 하루에 2,100억 개 이상의 e-mail을 주고받는다고 한다. 이러한 하루 정보량은 20세기 초로 따지면 전 세계인의 평생 정보량과 맞먹을 정도다. 심지어 인류 5000년간 축적된 데이터가 단 하루 만에 생성된다.
+:::
+
+---
+
+## IT 서비스의 지위 
+
+![](https://cdn.statcdn.com/Infographic/images/normal/17727.jpeg){fig-alt="global data creation"}
+
+---
+
+## 강의 순서
+
+<br/>
+<br/>
+
+1. 문화진화론
+
+:::{.fragment .highlight-blue}
+2. 진화의 공간
+:::
+
+---
+
+## 진화의 공간 {auto-animate="true"}
+
+<br/>
+
+#### 화덕만두 메뉴 구별법
+
+::: columns
+
+::: {.fragment .column width="50%"}
+##### 메뉴판
+
+![](https://www.changupdo.com/data/franchise/11076/2083770158_jpaXFIdc_EB8BA4EC9AB4EBA19CEB939C_-_2021-01-15T231845.319.jpg)
+
+:::
+
+:::{.column width="5%"}
+:::
+
+::: {.fragment .column width="45%"}
+
+##### 화덕 속 만두
+
+![](http://pds27.egloos.com/pds/201302/03/08/a0015808_510e5b1e59f10.jpg)
+:::
+
+:::
+
+---
+
+## 영상 자료
+
+
+<iframe src="https://www.youtube.com/embed/-Zs0XawBkCo" width="1000" height="600"></iframe>
+
+
+---
+
+## 진화의 공간 {auto-animate="true"}
+
+<br/>
+
+네 가지 메뉴를 사장님 또는 손님이 구분할 수 있는 방법은?
+
+---
+
+## 정답 {auto-animate="true"}
+
+- 흰깨(0)와 검은깨(1)만 있으면 됨
+- 11, 10, 01, 00
+
+
+$$ {참깨의\:종류}^2 = 메뉴의\:종류 $$
+$$ 2^2 = 4 $$
+
+- 유일한 방법은 아님
+
+---
+
+## 정답 {auto-animate="true"}
+
+![](https://www.menupan.com/common/service/img_proxy.asp?src=http%3A%2F%2Fblogfiles.naver.net%2F20140425_294%2Fjylhee0704_1398423598799G1WP0_JPEG%2FP4251672.jpg){fig-alt="menu" width="800"}
+
+
+---
+
+### 유한한 요소들로 무한에 가까운 공간을 생성하는 법
+
+<br/>
+<br/>
+
+::: incremental
+- 조합(combination)
+- 복잡하고 다양한 feature 들을 만들어 내는 방법
+- 화덕만두 메뉴 공간보다 훨씬 넓은 공간으로 
+:::
+
+---
+
+### 바벨의 도서관(1944, 호르헤 루이스 보르헤스)
+
+
+::: {.r-stack}
+![](http://newsimg.hankookilbo.com/2019/02/11/201902111594754423_10.jpg){.fragment width="900"}
+
+![](https://medievalfragments.files.wordpress.com/2013/01/screen-shot-2013-01-11-at-11-40-46-am.png){.fragment width="700"}
+
+![](https://preview.redd.it/10gapzlwiz351.jpg?auto=webp&s=a030e526c9cdee33646588ba1bb7eb0c99c1d750){.fragment width="500"}
+:::
+
+:::{.notes}
+보르헤스의 단편 소설로 그가 대문호로 알려지게 된 작품이며 이후 많은 문학작품에 영감을 주었음.
+:::
+
+---
+
+## 도서관의 구조
+
+::: incremental
+- 1개 진열실에 20개 책장(4개 벽 X 5개 책장)
+- 책장마다 32권의 책
+- 각 권은 410페이지
+- 각 페이지는 40줄
+- 각 줄은 80여개 글자
+:::
+
+:::{.fragment .r-stack}
+**그렇다면 진열실은 몇개인가?**
+:::
+
+---
+## 육각형 진열실의 개수
+
+
+
+
+---
+
+## Vanishingly small, Vastly
+
+::: incremental
+
+- Vanishingly small : **없**다고 할 정도로 **작은**, *없작은*
+- Vastly(**V**ery-much-more-than-**ast**ronomical**ly**) : **천**문학적인 수보다 훨씬 **많은**, *천많은*
+
+:::
+
+---
+
+### Vanishingly small, Vastly 
+
+![](){fig-alt="intuition pump"}
+
+---
+
+## library of babel
+
+[library of babel 링크](https://libraryofbabel.info/)
+
+
+<iframe src="https://libraryofbabel.info/" width="1000" height="500"></iframe>
+
+---
+
+## 사막에서 바늘을 찾아봅시다!🌵
+
+<br/>
+
+🎯 target 문장 ↓↓↓↓
+  
+> on september sixth, twenty twenty four, a first unicorn startup was born at Cocone 1000 School.
+
+---
+
+## "UX 와 서비스 기획"과 연관성
+ 
+::: incremental
+- 실제 서비스는 바벨의 도서관의 텍스트처럼 딱 떨어지지는 않지만 유사한 공간을 상상해보는 것이 도움이 될 것
+
+- 자신이 현재 어떤 '도서관'의 어떤 영역에 있는지(아직 공간을 찾지 못했다면 어떤 공간으로 갈지를 고민해보세요)
+
+- 공간의 방대함이 느껴지는지
+:::
+
+---
+
+<br>
+<br>
+<br>
+
+::: {.r-stack}
+> "행복한 가정은 모두 모습이 비슷하고, 불행한 가정은 모두 제각각으로 불행을 안고 있다." 
+<br><br> 톨스토이 "안나 카레리나"의 첫 문장 
+:::
+
+
+---
+
+오늘의 토론 거리
+
+
+---
+
+<br>
+<br>
+<br>
+<br>
+
+::: {.r-stack}
+**감사합니다**
+:::
+

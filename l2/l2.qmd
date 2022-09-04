@@ -1,0 +1,88 @@
+---
+title: "L2. Ontology of IT service"
+subtitle: "서비스와 인간과의 관계"
+author: Minseop Lee(Programs in Cognitive Science, SNU)
+date: 2022-09-13(Tue)
+format:
+  revealjs: 
+    slide-number: true
+    # scrollable: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: UX와 서비스 기획
+resources:
+  - demo.pdf
+---
+
+
+## 지난 강의 정리
+
+::: incremental
+- 서비스를 하나의 유기체와 같은 의미로 생각할 수 있음
+- 서비스를 만들어 내는 일이 방대한 공간을 탐색하는 일과 같음을 이해
+:::
+
+---
+
+## 좋은 서비스와 나쁜 서비스를 가르는 기준에 대해서
+
+
+---
+
+## 공생(Symbiosis)의 종류
+
+::: incremental
+1. Mutualism(상리공생)
+2. Commensalism(편리공생)
+3. Amensalism(편해공생)
+4. Paraticism(기생)
+5. Hostile symbiosis(적대적 공생)
+:::
+
+---
+
+## 1. Mutualism
+
+<!-- 
+사례
+-->
+
+---
+
+## 2. Commensalism
+
+<!-- 
+사례
+-->
+
+---
+
+## 3. Amensalism
+
+<!--
+사례
+-->
+
+---
+
+## 4. Paraticism
+
+<!-- 
+사례
+-->
+
+---
+
+## 5. Hostile symbiosis
+
+<!-- 
+사례
+-->
+
+
+---
+
+## 경사하강법
+

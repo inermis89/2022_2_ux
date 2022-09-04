@@ -1,0 +1,142 @@
+---
+title: "UX와 서비스 기획"
+subtitle: "L0 orientation"
+author: Minseop Lee(Programs in Cognitive Science, SNU)
+date: 2022-09-06
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: UX와 서비스 기획
+resources:
+  - demo.pdf
+---
+
+## 강의를 시작하며
+
+<br/>
+
+::: {.fragment .fade-in}
+#### 한학기 동안 본 수업의 목표
+
+- 한발 멀리서 `UX와 서비스 기획`에 대해 살펴보기
+:::
+. . .
+
+<br/>
+
+::: {.callout-note .fragment .highlight-blue}
+- _UX와 서비스 기획 방법론이 주가 되는 수업이며 해당 파트에서는 다양한 생각을 공유하고 토론할 수 있게 구성_
+:::
+
+---
+
+## 강사소개
+
+
+- 서울대학교 자유전공학부(인지생물심리학, 경제학 전공)
+- 서울대학교 과학사 및 과학철학 협동과정 석사(생물철학전공)
+- 현 서울대학교 인지과학 협동과정 박사 수료(진화인지심리학)
+- (주)트랜스버스 근무(2020.12 ~ 2022.8)
+
+::: {.fragment .fade-up .column-screen}
+ > 진화론을 바탕으로 인간의 **이타성, 사회성, 도덕성** 등의 독특한 특징이 **새로운 기술의 시대**에 어떻게 발현될지 탐구하는데 관심
+:::
+
+---
+
+## 강의 소개 {auto-animate="true"}
+
+::: {.fragment .fade-in}
+0. Orientation(L0)
+1. 서비스의 존재론(L1~2강)
+2. 서비스의 발생과 구조, 그리고 진화(L3~4강)
+3. 서비스의 적응성(L5~6강)
+4. 서비스의 맥락성(L7~8강)
+:::
+
+---
+
+## 1. 서비스의 존재론(L1~2강)[^1],[^2]
+
+::: incremental
+- 문화진화론 일반
+- 진화의 공간
+- 성공하는 서비스
+- 서비스와 인간과의 관계
+:::
+
+[^1]: Dennett, 노승영, & 장대익. (2015). 직관펌프 생각을 열다 : 대니얼 데닛의 77가지 생각도구 / 대니얼 데닛 지음 ; 노승영 옮김 ; 장대익 해설.
+[^2]: 이정동. (2017). 인공물의 진화 / 이정동 외 지음. ch.2 "인공물의 진화와 혁신, 비유를 넘어서" 장대익, 이민섭
+
+---
+
+## 2. 서비스의 발생과 구조 그리고 진화(L3~4강)[^3],[^4]
+
+::: incremental
+- 팀이 서비스를 만드는 과정, 진화의 관점에서 바라본 서비스 기획 방법론
+- 구조적으로 강건한 서비스, 모듈 구조의 진화
+    - 모듈화, 강건함, 재사용성, 혁신
+:::
+
+[^3]: Ries, & 이창수. (2012). 린 스타트업 / 에릭 리스 지음 ; 이창수, 송우일 옮김.
+[^4]: Carroll, & 김명남. (2007). 이보디보 : 생명의 블랙박스를 열다 / 션 B. 캐럴 지음 ; 김명남 옮김.
+
+---
+
+## 3. 서비스의 적응성(L5~6강)[^5],[^6]
+
+::: incremental
+- 진화심리학과 서비스
+- 생애사 이론, 근봉동기이론
+- 인지심리학과 서비스
+:::
+
+[^5]:  Buss, & 이충호. (2012). 진화심리학 : 마음과 행동을 탐구하는 새로운 과학 / 데이비드 버스 지음 ; 이충호 옮김.
+[^6]: Kenrick, Neuberg, Cialdini, 김아영, Neuberg, Steven L, & Cialdini, Robert B. (2020). 사회심리학 : 마음과 행동을 결정하는 사회적 상황의 힘 / 로버트 치알디니, 더글러스 켄릭, 스티븐 뉴버그 지음 ; 김아영 옮김
+
+---
+
+## 4. 서비스의 맥락성(L7~8강)[^7],[^8]
+
+::: incremental
+- 사회적 영향과 서비스
+- 서비스의 생태계
+:::
+
+[^7]: Richerson, Boyd, 김준홍., Boyd, Robert, & 김준홍. (2009). 유전자만이 아니다 : 문화가 어떻게 인간 진화의 경로를 바꾸었는가 / 피터 J. 리처슨, 로버트 보이드 [공]지음 ; 김준홍 옮김.
+[^8]: Jackson, & 박선진. (2021). 휴먼 네트워크 : 무리 짓고 분열하는 인간관계의 모든 것 / 매슈 O 잭슨 지음 ; 박선진 옮김.
+
+---
+
+## 강의방식 {.smaller}
+
+::: {.fragment .callout-tip}
+- 거꾸로 학습, 먼저 올린 자료를 보고 생각해오세요
+  - 에보클래스에 30분 이내의 짧은 영상을 올릴 예정, 수업 전까지 꼭 보고 오세요!(시청 여부 ✅)
+- 토론 중심, 정답은 없음, 손들고 이야기하면 더 좋습니다.
+- 강의는 덤. 참고자료도 시간이 되고 관심이 더 생기면 읽어보세요!
+:::
+
+
+::: {.r-stack}
+
+![](https://news.harvard.edu/wp-content/uploads/2019/09/activelearning-2048x1430.jpg){.fragment fig-alt="effectiveness of active learning" width=450}
+
+:::
+
+::: footer
+참고자료 출처 : [Link](https://news.harvard.edu/gazette/story/2019/09/study-shows-that-students-learn-more-when-taking-part-in-classrooms-that-employ-active-learning-strategies/)
+:::
+
+---
+
+## slido 테스트
+
+
+<iframe src="https://wall.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL" width="600" height="400"></iframe>
+
+<iframe src="https://app.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL/embed/polls/b86ce9f9-7661-4627-870c-38fa15d55048" width="300" height="400"></iframe>
