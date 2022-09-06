@@ -420,15 +420,6 @@ $$ 2^2 = 4 $$
 
 ---
 
-### library of babel
-
-[library of babel 링크](https://libraryofbabel.info/)
-
-
-<iframe src="https://libraryofbabel.info/" width="1000" height="500"></iframe>
-
----
-
 ### 사막에서 바늘을 찾아봅시다!🌵
 
 <br/>
@@ -436,6 +427,16 @@ $$ 2^2 = 4 $$
 🎯 target 문장 ↓↓↓↓
   
 > on september sixth, twenty twenty four, a first unicorn startup was born at Cocone 1000 School.
+
+---
+
+### library of babel
+
+[library of babel 링크](https://libraryofbabel.info/)
+
+
+<iframe src="https://libraryofbabel.info/" width="1000" height="500"></iframe>
+
 
 ---
 
