@@ -107,7 +107,7 @@ _여러분들의 도서관을 정하시고 계신가요?_
 :::
 
 ::: {.r-stack}
-![](http://newsimg.hankookilbo.com/2019/02/11/201902111594754423_10.jpg){.fragment}
+![](http://newsimg.hankookilbo.com/2019/02/11/201902111594754423_10.jpg){.fragment height="300"}
 :::
 
 ---
@@ -120,7 +120,7 @@ _여러분들의 도서관을 정하시고 계신가요?_
 :::
 
 ::: {.r-stack}
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tsubakurodake_from_Otenshodake_2002-8-22.jpg/640px-Tsubakurodake_from_Otenshodake_2002-8-22.jpg){.fragment}
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tsubakurodake_from_Otenshodake_2002-8-22.jpg/640px-Tsubakurodake_from_Otenshodake_2002-8-22.jpg){.fragment height="300"}
 :::
 
 
@@ -406,7 +406,7 @@ fig.show()
 
 
 ::: {.r-stack}
-![](https://thumbs.dreamstime.com/b/exploitation-exploration-staying-balance-pictured-as-metal-scale-weights-labels-exploitation-exploration-to-198075390.jpg){.fragment}
+![](https://thumbs.dreamstime.com/b/exploitation-exploration-staying-balance-pictured-as-metal-scale-weights-labels-exploitation-exploration-to-198075390.jpg){.fragment height="300"}
 :::
 
 ---
@@ -662,10 +662,10 @@ _위의 조건들에 따르면 SNS 서비스들은 좋은 경험을 선사하는
 
 ### 나와 SNS 의 관계에 대해 이야기해보기
 
-#### 서비스의 편익을 잘 활용하고 있는지, 서비스에 탐닉하고 있는지
+- ##### 서비스의 편익을 잘 활용하고 있는지, 서비스에 탐닉하고 있는지
 
 
-<iframe src="https://wall.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL?section=1318ac6b-7f9e-4c44-ab48-76031f1d459e" width="1000" height="600"></iframe>
+<iframe src="https://wall.sli.do/event/1bLfjpfVAEuaqBbLFvp9sL?section=1318ac6b-7f9e-4c44-ab48-76031f1d459e" width="1000" height="500"></iframe>
 
 ---
 
