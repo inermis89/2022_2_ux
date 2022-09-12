@@ -41,7 +41,7 @@
 
 0. Orientation(L0) - [[발표자료]](https://inermis89.github.io/2022_2_ux/l0)
 
-1. 서비스의 존재론(L1~2강)[^1],[^2] - [[발표자료]](https://inermis89.github.io/2022_2_ux/l1)
+1. 서비스의 존재론(L1~2강)[^1],[^2] - [[L1 발표자료]](https://inermis89.github.io/2022_2_ux/l1) [[L2 발표자료]](https://inermis89.github.io/2022_2_ux/l2)
 
     - 문화진화론 일반
     - 진화의 공간 속 서비스
