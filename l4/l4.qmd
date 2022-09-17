@@ -1,0 +1,23 @@
+---
+title: "L4. " 
+subtitle: "  "
+author: Minseop Lee(Programs in Cognitive Science, SNU)
+date: 2022-09-20(Tue)
+format:
+  revealjs: 
+    slide-number: true
+    # scrollable: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: UX와 서비스 기획
+resources:
+  - demo.pdf
+---
+
+https://yozm.wishket.com/magazine/detail/1455/
+
+
+https://needjarvis.tistory.com/323
+
