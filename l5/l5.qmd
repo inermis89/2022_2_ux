@@ -1,0 +1,19 @@
+---
+title: "L5" 
+subtitle: ""
+author: Minseop Lee(Programs in Cognitive Science, SNU)
+date: 2022-10-04(Tue)
+format:
+  revealjs: 
+    slide-number: true
+    # scrollable: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    css: styles.css
+    footer: UX와 서비스 기획
+resources:
+  - demo.pdf
+---
+
+### 강의목표
