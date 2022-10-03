@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/tabby.min.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="l5_files/libs/clipboard/clipboard.min.js"></script>
+<script src="l5_files/libs/quarto-html/tabby.min.js"></script>
+<script src="l5_files/libs/quarto-html/popper.min.js"></script>
+<script src="l5_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="l5_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="l5_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="l5_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Minseop Lee(Programs in Cognitive Science, SNU)">
-  <title>L4.서비스의 발생과 구조 그리고 진화</title>
+  <title>L5 서비스의 적응성(1)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="l5_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="l5_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -24,14 +24,14 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="l5_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="styles.css">
-  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="l5_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -322,325 +322,330 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">L4.서비스의 발생과 구조 그리고 진화</h1>
-  <p class="subtitle">좋은 팀의 요건</p>
+  <h1 class="title">L5 서비스의 적응성(1)</h1>
+  <p class="subtitle">적응 개념과 서비스에서의 적응</p>
   <p class="author">Minseop Lee(Programs in Cognitive Science, SNU)</p>
-  <p class="date">2022-09-27(Tue)</p>
+  <p class="date">2022-10-04(Tue)</p>
 </section>
 
+<section class="slide level2">
+
+<h3 id="키워드로-보는-전반부-강의요약">키워드로 보는 전반부 강의요약</h3>
+<ul>
+<li>L1 : ‘공간’</li>
+<li>L2 : ‘성공’</li>
+<li>L3 : ‘모듈’</li>
+<li>L4 : ‘팀’</li>
+<li>서비스를 기획하기에 앞서 점검해야 할 내용들</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="후반부-강의소개">후반부 강의소개</h3>
+<ul>
+<li>서비스 기획과 사용자 조사에 필요한 개념들 소개</li>
+<li>L5 : 적응</li>
+<li>L6 : 근본 동기</li>
+<li>L7 : 편향(인지, 내용, 맥락(모델, 순응))</li>
+<li>L8 : 네트워크</li>
+</ul>
+</section>
 <section class="slide level2">
 
 <h3 id="강의목표">강의목표</h3>
 <ul>
-<li>좋은 서비스를 기획하기 위한 필수 조건인 좋은 팀의 요건에 대해 알아보자.</li>
-<li>서비스 뿐만 아니라 팀이 잘 운영되는지도 새로운 관점에서 바라보는 것이 중요하다.</li>
+<li>적응의 개념을 이해한다.</li>
+<li>서비스에서 적응의 사례들을 확인한다.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="시작하기-전에">시작하기 전에</h3>
-<iframe src="https://osori.github.io/trust-ko/" width="1000" height="600">
-</iframe>
+<h3 id="다시-ux와-서비스-기획에-초점">다시 UX와 서비스 기획에 초점</h3>
+<ul>
+<li>눈에 보이는 부분을 어떻게 처리할까?</li>
+<li>기능적인 측면을 어떻게 처리할까?</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="좋은-팀을-구성하는데-필요한-것들">좋은 팀을 구성하는데 필요한 것들</h3>
+<h3 id="사용자-조사---서비스-기획의-간극">사용자 조사 -&gt; 서비스 기획의 간극</h3>
 <ul>
-<li>팀 내 상호작용과 커뮤니케이션이 갖추어야 할 덕목
+<li>여러가지 조사방법론을 배우고는 있으나 의사결정으로 조사의 결과들이 이어지는 것은 또 어려운 문제
+<ul>
+<li>어떤 지표를 중요하게 여겨야할지 정해야함.</li>
+<li>각 지표에 대해서 어느 수준이 green light 인지를 자체적으로 정해야함.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="야구의-작전">야구의 작전</h3>
+<ul>
+<li>타구 낙하지점 자료를 기반으로 한 내야 시프트 작전</li>
+<li>투수에 따른 대타 작전</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>성공률이 얼마나 될까?</li>
+<li>작전이 실패하더라도 작전은 계속 내야 한다.(결과론의 두려움을 극복하자.)</li>
+</ul>
+</div>
+</section>
+<section id="지표-선택" class="slide level2 smaller">
+<h2>지표 선택</h2>
+<ul>
+<li>정성 지표
+<ul>
+<li><strong>해당 기능은 꼭 필요한가?</strong>
+<ul>
+<li>왜 필요한가?</li>
+<li>어떻게 구현할 것인가?</li>
+</ul></li>
+<li><strong>해당 기능을 가져갈 때 따라오는 결과들은 무엇이 있을까?</strong>
+<ul>
+<li>그러한 결과들을 어떻게 해결할 것인가?</li>
+</ul></li>
+</ul></li>
+<li>정량 지표
+<ul>
+<li>얼마나 많은 사람이 관심을 보였는가?</li>
+<li>얼마나 많은 사람이 선호했는가?</li>
+<li>…</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="적응-논의가-적용되는-부분">적응 논의가 적용되는 부분</h3>
+<ul>
+<li><p>해당 기능이 꼭 필요한지 고민한 뒤</p></li>
+<li><p>해당 기능을 가져갈 때 따라오는 결과들이 무엇인지 생각해볼때</p></li>
+<li><p>적응 논의가 도움이 됨.</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="적응이란-무엇인가">적응이란 무엇인가?</h3>
+<p>테오도시우스 도브잔스키는 적응을 다음과 같이 정의하였다.</p>
 <ol type="1">
-<li>이타성</li>
-<li>진실성</li>
-<li>신속성</li>
-</ol></li>
-<li>각 요소들을 촉진시키거나 저해하는 요인들에 대해서 알아보자.</li>
-</ul>
+<li>적응은 생물이 서식지에서 보다 잘 살 수 있도록 하는 진화의 과정이다.</li>
+<li>적응도는 생물이 주어진 서식지에 얼마나 적합하게 진화되었는지를 나타내는 것으로 생물의 생존 정도와 재생산 정도로 나타낼 수 있다.</li>
+<li>적응형질은 생물이 생존하고 재생산하는데 유리한 방향으로 진행된 유전형질의 발현 특징이다.</li>
+</ol>
 </section>
 <section class="slide level2">
 
-<h3 id="이타성">1. 이타성</h3>
-<ul>
-<li><p>이타성의 본질과 협업의 조건을 잘 알아야 협업을 잘 할 수 있고, 갈등을 잘 관리할 수 있다.</p></li>
-<li><p>이타성의 정의</p>
-<ul>
-<li>나의 비용을 들여 타인에게 도움되는 행동을 하는 것</li>
-</ul></li>
-</ul>
-<div class="callout callout-note callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Sober, Wilson 은 &lt;타인에게로&gt;에서 ’진화적 이타주의’와 ’심리학적 이타주의’를 구분하였다.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="진화적-이타주의와-심리학적-이타주의의-구분">※ 진화적 이타주의와 심리학적 이타주의의 구분</h3>
-<table>
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>구분</th>
-<th>진화적 이기주의</th>
-<th>진화적 이타주의</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>심리학적 에고이즘</td>
-<td>1. S는 최대한 많은 식량을 확보하고 싶어한다.</td>
-<td>3. S는 요새를 세우는 데 도움을 주고 싶어한다.</td>
-</tr>
-<tr class="even">
-<td>심리학적 이타주의</td>
-<td>4. S는 자녀의 안녕에 관심을 가진다.</td>
-<td>2. S는 집단 구성원들의 안녕에 관심을 가진다.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
-<h3 id="꿀벌-개미-등-진사회성-동물의-생식-분업">꿀벌, 개미 등 진사회성 동물의 생식 분업</h3>
-
-<img data-src="https://mblogthumb-phinf.pstatic.net/20161019_172/nie_korea_1476839235018yhmDD_JPEG/shutterstock_129600581.jpg?type=w2" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="미어캣의-알람콜">미어캣의 알람콜</h3>
-
-<img data-src="https://innerself.com/images/2019r/c0a1e5cb7d1db549f16e42adadd80fcf.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="나에게-손해가-되는-행동이-어떻게-진화했을까">나에게 손해가 되는 행동이 어떻게 진화했을까?</h3>
-<ul>
-<li>진화생물학에서 이타성
-<ul>
-<li>꿀벌, 개미 등 진사회성 동물의 생식 분업</li>
-<li>미어캣, 땅다람쥐의 알람콜</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="친족선택론kin-selection---피는-물보다-진하다.">친족선택론(Kin selection) - 피는 물보다 진하다.</h3>
-<ul>
-<li>해밀턴 규칙(Hamilton’s rule)
-<ul>
-<li><span class="math inline">\(rB &gt; C\)</span></li>
-<li>이타적 행동에 드는 비용보다 도움을 받는 개체와의 근연도와 개체가 받는 도움의 곱보다 크면 이타적 행동이 살아남을 수 있음.</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="해밀턴-규칙">해밀턴 규칙</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/hamilton1.png"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/hamilton2.png"></p>
-</div>
-</div>
-<div class="footer">
-<p>참고자료 : <a href="https://www.ias.ac.in/article/fulltext/reso/005/04/0062-0073">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="친족선택론kin-selection---피는-물보다-진하다.-1">친족선택론(Kin selection) - 피는 물보다 진하다.</h3>
+<h3 id="적응이란-무엇인가-1">적응이란 무엇인가?</h3>
 <blockquote>
-<p>나는 내 형제 한명 물에 빠진다면 내 목숨을 내놓고 물에 뛰어들지 않겠지만 형제 두명이나 사촌 8명이라면 그렇게 할 것이다. - J.B.S 홀데인</p>
+<p>적응은 자연 선택에 의한 진화의 1차적 산물 (Alcock, 2009; Dawkins 1982; Dennett, 1995; Gould, 1997; Triverse, 1985; Williams, 1992)</p>
+</blockquote>
+<ul>
+<li>자연선택에 의한 산물은 적응만 있는 것은 아니다.</li>
+<li>적응, 부산물, 임의 효과, 굴절적응</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="적응-진화적-적응환경">적응 : 진화적 적응환경</h3>
+<ul>
+<li>눈의 진화 : 수억년에 걸친 가시광선 환경</li>
+<li>이족 보행의 진화 : 440만년 전의 진화적 환경</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="부산물">부산물</h3>
+<ul>
+<li>적응문제를 해결하지도 못하고, 기능적 설계도 갖지 않은 특성</li>
+<li>기능적 설계를 가진 특성과 함께 ’전달’되는데 우연히 그러한 적응과 짝을 이루었기 때문이다.</li>
+<li>전구에서 발생하는 열이 빛을 얻기 위한 설계의 부산물인 것과 마찬가지</li>
+<li>ex) 사람의 배꼽 : 생존이나 생식에 도움이 된다는 증거 X,
+<ul>
+<li>성장하는 태아에게 영양분을 공급한 탯줄의 부산물</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="임의-효과-잡음noise">임의 효과, 잡음(noise)</h3>
+<ul>
+<li>돌연변이, 돌발적이고 전례가 없는 환경 변화, 발달 동안에 일어나는 사고 같은 힘 때문에 생겨날 수 있다.</li>
+<li>기계에 모래를 뿌리거나, 컴퓨터 하드드라이브에 뜨거운 커피를 쏟으면 그 기능의 작동을 망치는 것처럼 임의효과는 가끔 생물의 기능이 순조롭게 돌아가는 걸 방해한다.</li>
+<li>임의 효과 중에는 중립적인 것(적응 기능 작동에 도움도 되지 않고 그렇다고 방해도 되지 않는)도 있고 생물에게 도움이 되는 것도 있다.</li>
+<li>ex) 전구의 유리 용기는 재료와 제조 과정의 결함 때문에 반반하지도 않고 울퉁불퉁한 곳이 있더라도 전구는 제 기능을 발휘할 수 있다.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="세가지-진화산물의-상대적-크기">세가지 진화산물의 상대적 크기</h3>
+<ul>
+<li>진화과학자들의 의견이 다른 부분</li>
+<li>어떤 사람들은 언어처럼 순전히 사람의 속성인 것조차 큰 뇌의 우연한 부산물에 불과하다고 생각(Gould, 1991)</li>
+<li>어떤 사람들은 사람의 언어가 적응이라는 것을 보여주는 증거가 아주 많다고 주장한다(Pinker, 1994).</li>
+</ul>
+</section>
+<section id="굴절적응exaptation" class="slide level2 smaller">
+<h2>굴절적응(exaptation)</h2>
+<ul>
+<li>스티븐 제이 굴드</li>
+<li>하나의 유기체가 특정 용도에 적합한 한 가지 특성을 발전시키고 이후에 그 특성이 전혀 다른 기능으로 이용되는 것을 말하는데 고전적인 사례가 ‘새의 깃털’</li>
+<li>처음에는 추운 날씨에서 몸을 보호하려고 했던 것이 하늘을 나는 용도로 변했기 때문</li>
+</ul>
+<blockquote>
+<p>어두운 방을 밝히기 위해 성냥을 켰는데, 문을 열자 방안에 통나무 장작이 쌓여있고 벽난로가 있다면 성냥은 전혀 다른 용도를 갖게 된다. 하나의 맥락에서는 어둠을 밝히는 도구가 다른맥락에서는 몸을 따뜻하게 하는 도구가 되는 것이다. 이것이 굴절적응의 본질이다.</p>
 </blockquote>
 </section>
 <section class="slide level2">
 
-<h3 id="j.b.s-홀데인">J.B.S 홀데인</h3>
-
-<img data-src="img/haldane2.png" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://www.ias.ac.in/article/fulltext/reso/005/04/0062-0073">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="흡혈박쥐의-피-나누기">흡혈박쥐의 피 나누기</h3>
-<p><img data-src="https://www.thedailypost.kr/news/photo/201911/71126_62358_3340.png"></p>
-<aside class="notes">
-<p>흡혈박쥐는 2~3일 내에 피를 공급받지 못한다면 죽는다.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2">
-
-<h3 id="평판과-이타주의">평판과 이타주의</h3>
-
-<img data-src="https://images-na.ssl-images-amazon.com/images/I/71GeVtcfl7L.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="비친족간에-일어나는-이타주의">비친족간에 일어나는 이타주의</h3>
+<h3 id="자연계에서-많이-나타나는-굴절적응">자연계에서 많이 나타나는 굴절적응</h3>
 <ul>
-<li>호혜적 이타주의</li>
-<li>간접적 호혜주의</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="호혜적-이타주의">호혜적 이타주의</h3>
+<li>박테리아 편모의 복잡성
 <ul>
-<li>로버트 엑셀로드, “협력의 진화”</li>
-<li>죄수의 딜레마와 팃포탯(Tit-for-tat)</li>
-</ul>
-<div class="callout callout-tip callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>이코노미 게임의 종류와 효용성 - 죄수의 딜레마, 협력 게임, 독재자 게임, 최후통첩게임, 제3자처벌게임, 공공재게임 등</p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<ul>
-<li>이기적인 개인으로 이루어진 사회에서 협력이 어떻게 발생하는지를 설명하기 위해 반복적인 죄수의 딜레마 게임에서 최선의 결과를 얻을 수 있는 행동규칙을 찾는 컴퓨터 프로그램 대회를 개최</li>
-<li>한 번이 아니라 수백 번의 죄수의 딜레마 게임을 반복할 때 자신의 이익을 극대화하는 최선의 행동규칙은 무엇인가?</li>
-<li>수백 명의 경기자들이 컴퓨터로 무작위로 1:1죄수 딜레마 게임을 진행한다. 경기자들 사이의 어떠한 사전적인 합의는 없고, 경기자의 목표는 최고의 합산 점수를 얻는 것이다.</li>
-<li>12개 팀의 전문가들이 참여한 1차 대회에서 팃포탯(tit-for-tat) , 즉 ‘눈에는 눈, 이에는 이’ 규칙을 적용한 프로그램이 우승했다. 이 결과를 공표하고, 일반인들까지 포함한 60여개 팀이 참여한 2차 대회에서도 역 시 팃포탯이 우승했다.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2">
-
-<h3 id="죄수의-딜레마">죄수의 딜레마</h3>
-
-<img data-src="https://cdn.britannica.com/55/91955-050-F444D10D/dilemma-prisoners-participants-game-theory-communication-strategy.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="간접적-호혜주의">간접적 호혜주의</h3>
-<ul>
-<li>좋은 평판을 쌓으면 제 3자를 통해서 이익이 돌아옴</li>
-</ul>
-
-<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature04131/MediaObjects/41586_2005_Article_BFnature04131_Fig1_HTML.jpg?as=webp" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="평판의-힘">평판의 힘</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>최후통첩 게임(Ultimatum game) <img data-src="https://www.researchgate.net/profile/Shu-Li-lishu/publication/282306162/figure/fig1/AS:614268357574663@1523464397115/Schematic-diagram-of-the-ultimatum-game.png"></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnature02043/MediaObjects/41586_2003_Article_BFnature02043_Fig3_HTML.jpg?as=webp"></p>
-</div>
-</div>
-<div class="footer">
-<p>참고자료 : <a href="https://www.nature.com/articles/nature02043.">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="처벌의-힘">처벌의 힘</h3>
-
-<img data-src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnature02043/MediaObjects/41586_2003_Article_BFnature02043_Fig4_HTML.jpg?as=webp" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://www.nature.com/articles/nature02043">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="반복되지-않는-상황에서의-이타주의---강한-호혜성">반복되지 않는 상황에서의 이타주의 - 강한 호혜성</h3>
-<ul>
-<li>집단선택론(Group selection)</li>
-<li>Big mistake 가설, 비혈현에까지 광범위하게 발현되는 이타성은 혈연 집단끼리 모여 살던 사회에서의 적응이 큰 사회에서까지 발현되는 일종의 ’실수’와 같은 것</li>
-<li>과시가설(값비싼 신호 가설)</li>
-<li>집단의 압력(원거리 무기의 출현)</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="강한-호혜성">강한 호혜성</h3>
-<ul>
-<li>사람들은 one-shot 게임에서도 기꺼이 익명의 남을 도와주는 경향이 있음.
-<ul>
-<li>일면식도 없는 타인을 위한 기부</li>
+<li>박테리아의 운동을 담당하는 편모 구조만 해도 엄청나게 복잡함.</li>
+<li>편모는 일종의 생물학적 모터인데 그것을 구성하는 부분 중 어느 하나만 없어도 모터의 기능을 담당하지 못한다.</li>
+<li>이러한 사실을 기반으로 지적설계를 주장하는 자들은 ‘환원불가능한 복잡성’ 개념을 만들어서 생물은 점진적으로 진화할 수 없다고 하였음.</li>
+<li>그러나 편모가 운동성을 가지기 전에는 내부 유전물질을 다른 생물체게 주입하는 주사바늘과 같은 기능을 했음이 밝혀지면서 지적설계론이 반박되었음.</li>
 </ul></li>
-<li>강한 호혜성은 호혜적 이타주의와 간접적 호혜주의를 넘어서는 개념</li>
-<li>강한 호혜성은 협력적이고 집단의 규율을 따르는 타인에 대해 보상을 주고(이타적 보상) 아닌 자에게 처벌을 내리는 행동(이타적 처벌)을 포함한다.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="집단선택론-문화집단선택론">집단선택론, 문화집단선택론</h3>
-<ul>
-<li>집단선택이 있다면 가능함.</li>
-</ul>
+<h3 id="박테리아-편모의-굴절적응">박테리아 편모의 굴절적응</h3>
 
-<img data-src="https://onlinelibrary.wiley.com/cms/asset/c8500516-6a63-4ccb-b81f-6d2874c99350/jeb_1258_f2.gif" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1420-9101.2006.01258.x">[Link]</a></p>
+<img data-src="https://mblogthumb-phinf.pstatic.net/data44/2009/2/20/291/c1f6c0fbbcb3b0e8b7d0c0e7c6c72-1_iiai_ohryan77.jpg?type=w2" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="적응은-최선의-산물이-아니다">적응은 최선의 산물이 아니다!</h3>
+<ul>
+<li>하임리히법</li>
+<li>지구상에는 매년 약 10만 명 중 한 명이 목에 걸린 음식물 때문에 질식사함.</li>
+<li>이러한 현상은 인간의 호흡기관과 소화기관이 목구멍 부위에서 교차하는 구조로 되어 있기 때문에 발생한다.</li>
+<li>척추동물에게만 나타나는 ’불합리’한 구조</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="불합리성-in-합리성-합리성-in-불합리성">불합리성 in 합리성, 합리성 in 불합리성</h3>
+<ul>
+<li>척추동물의 조상은 어류로부터 갈라져 나왔고,</li>
+<li>소화기의 일부가 호흡기로 분화되는 과정에서 공유하는 관의 길이가 점차 짧아지면서 교차점만 남게 된 구조</li>
+<li>특정 시점에서의 최선의 선택</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="불합리성-in-합리성-합리성-in-불합리성-2">불합리성 in 합리성, 합리성 in 불합리성 #2</h3>
+<ul>
+<li>인간의 눈에 있는 맹점</li>
+<li>배선의 실수, 시신경과 그와 관련된 혈관들이 다발로 묶인 후 눈의 내부로 들어가 망막의 앞면에 연결되어 있음.</li>
+<li>초기 구조가 계속해서 전달되는 사례</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="불합리성-in-합리성-합리성-in-불합리성-2-1">불합리성 in 합리성, 합리성 in 불합리성 #2</h3>
+
+<img data-src="http://www.seehint.com/catalog/2013/2013_06/%EC%98%A4%EC%A7%95%EC%96%B4%EC%99%80%EC%82%AC%EB%9E%8C.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://i.insider.com/5cf92f2711e205408f612703?width=700.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리-1">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Samsung-iphone-X-ad-notch.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리-2">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://i0.wp.com/cdnssl.ubergizmo.com/wp-content/uploads/2019/11/samsung-galaxy-fold-review_09.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리-3">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://img-9gag-fun.9cache.com/photo/aLgzprv_700bwp.webp" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리-4">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99080E415BE74CED19174A" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스마트폰에서-불합리-5">스마트폰에서 ‘불합리’</h3>
+
+<img data-src="https://media.tenor.com/hC_77BZWvCMAAAAd/iphone14-dynamic-island.gif" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="적응주의-vs-반적응주의">적응주의 vs 반적응주의</h3>
+
+<img data-src="img/gouldlewontin.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스팬드럴과-팡글로시안-패러다임">스팬드럴과 팡글로시안 패러다임</h3>
+
+<img data-src="img/gouldlewontin1.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스팬드럴과-팡글로시안-패러다임-1">스팬드럴과 팡글로시안 패러다임</h3>
+
+<img data-src="https://i.pinimg.com/564x/4c/a3/24/4ca324f35994f4f8a865adbca3d1683d.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="스팬드럴과-팡글로시안-패러다임-2">스팬드럴과 팡글로시안 패러다임</h3>
+<ul>
+<li>볼테르 소설 “깡디드”에 나오는 팡글로스 박사에서 유래한 용어</li>
+<li>교수형에 처해질 위험에 처한 순간조차 “이것은 모든 가능한 세계 중에서 최선의 것이다. 모든 것은 언제나 지금 현재가 최선의 상태”라는 낙천적인 상태를 설파.</li>
+<li>지나치게 낙천적인 태도를 일컬음</li>
+<li>많은 진화의 산물을 모두 적응으로 보려는 태도를 비판하기 위한 굴드와 르원틴의 비유</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="스팬드럴과-팡글로시안-패러다임-3">스팬드럴과 팡글로시안 패러다임</h3>
+<ul>
+<li>베네치아에 있는 성 마르코 성당의 스팬드럴과 같이 굴드와 르원틴은 적응이라고 간주되는 대부분의 형질들이 스팬드럴과 같이 부산물일 뿐이라고 적응주의를 비판함.</li>
+<li>“코가 안경을 받치기 위해 만들어졌다고 이야기 하지 말자!”</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="spandrels-사실은-pendantives">Spandrels? 사실은 Pendantives</h3>
+<div class="columns">
+<div class="column">
+<p><img data-src="https://www.pnas.org/cms/10.1073/pnas.94.20.10750/asset/60752ec2-ef85-4304-8d73-cebb41f21af9/assets/graphic/pq2072363001.jpeg" height="600"></p>
+</div><div class="column">
+<ul>
+<li>굴드, “건축 구조 상의 left-over”</li>
+<li>pendantive = 3D spandrel</li>
+</ul>
+</div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="과시-가설값비싼-신호-가설">과시 가설(값비싼 신호 가설)</h3>
+<h3 id="dennett의-반박">Dennett의 반박</h3>
 <ul>
-<li>남성 사냥꾼의 역할이 단지 영양 공급(provisioning)에만 있지 않다는 가설</li>
-<li>누가 뛰어난 사냥꾼인지 쉽게 구분할 수 있음.</li>
-<li>뛰어난 사냥꾼은 사냥감을 부족원들과 관대하게 나누어 갖고 이성으로부터의 인기 등 번식적 이득을 얻는다.</li>
+<li>코벨 양식</li>
 </ul>
+<div class="columns">
+<div class="column">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Boulevard_de_Magenta_%28Paris%29%2C_num%C3%A9ro_56%2C_console_01.jpg/264px-Boulevard_de_Magenta_%28Paris%29%2C_num%C3%A9ro_56%2C_console_01.jpg" height="400"></p>
+</div><div class="column">
+<p><img data-src="https://e-struc.com/wp-content/uploads/2018/05/mensulas-barrocas-lecce-e-struc-ayuda-calculo-estructuras-online-13.jpg"></p>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="집단의-압력">집단의 압력</h3>
+<h3 id="dennett의-반박-1">Dennett의 반박</h3>
 <ul>
-<li>알파메일을 제압하기 위해서는 서열이 낮은 3마리가 달려들어야 함. 제압한다하더라도 심각한 타격은 불가피함.</li>
-<li>난 한놈만 팬다(?)</li>
-<li>그러나 원거리 무기의 발전으로 피해를 입지 않고 서열이 높은 개체를 무너뜨릴 수 있음.</li>
-<li>협업하지 않고 막무가내로 나갈 수 없음.</li>
+<li>squinch 양식</li>
 </ul>
-</section>
-<section class="slide level2">
-
-<h3 id="원거리-무기의-힘">원거리 무기의 힘</h3>
-
-<img data-src="https://st2.depositphotos.com/3213441/11707/v/950/depositphotos_117074824-stock-illustration-silhouette-of-human-evolution-on.jpg" width="1000" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="인간이-협력할-수-있게-된-이유">인간이 협력할 수 있게 된 이유</h3>
-<p><img data-src="https://cdn.entermedia.co.kr/news/photo/201407/3604_8920_1300.jpg" width="1000"></p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Odzun_cupola.jpg/500px-Odzun_cupola.jpg"></p>
 <aside class="notes">
-<p>인간은 왜 이렇게 폭력적인가?</p>
-<p>-&gt; 침팬지가 총쏘는 법을 알았다면 바로 3차 세계대전이 일어날 것이라고 제인구달 선생님 답변하셨는데, 아마 총을 쏠줄 알았다면 침팬지도 조금 온순해지지 않았을까?</p>
+<p>코벨 양식, 스퀸시 양식</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -655,23 +660,19 @@
 </section>
 <section class="slide level2">
 
-<h3 id="이타성에-대한-정리">이타성에 대한 정리</h3>
+<h3 id="dennett의-반박-2">Dennett의 반박</h3>
 
-<img data-src="https://onlinelibrary.wiley.com/cms/asset/65536b3c-b84a-4e78-9200-d326f1ae2b2b/jeb_1258_f1.gif" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1420-9101.2006.01258.x">[Link]</a></p>
+<img data-src="https://miro.medium.com/max/1098/1*Ait2Rg3vEESeAl02Um_X3Q.jpeg" class="r-stretch"><div class="footer">
+<p>참고자료 : <a href="https://blog.kaarwan.com/squinches-and-pendentives-in-architecture-8359cf6b8825">[Link]</a></p>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="조별과제가-어려운-이유">조별과제가 어려운 이유</h3>
-
-<img data-src="img/team_project.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="조별과제가-어려운-이유-1">조별과제가 어려운 이유</h3>
+<h3 id="dennett의-반박-3">Dennett의 반박</h3>
 <ul>
-<li>인간이 강한호혜성을 진화시킨 동물이지만 무임승차자를 완전히 제거할 수는 없었음.</li>
-<li>많은 사람들이 협력적인 사회일수록 무임승차의 유혹은 더욱 커진다.</li>
+<li>corbel, squinch, pendantive 모두 상부 구조를 받치기 위한 기능이 있는 각기 다른 건축 디자인 양식</li>
+<li>굴드와 르원틴이 말하는 spandrel(사실 pendantive) 구조는 다른 대안들과의 경쟁에서 미학적 우위를 차지한 적응의 산물이다.</li>
+<li>건축 양식들의 경쟁!</li>
 </ul>
 <div class="callout callout-note callout-captioned callout-style-default">
 <div class="callout-body">
@@ -682,186 +683,61 @@
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
+<p>이 시대의 건물은 어떤 목적으로 지어졌을지 생각해봅시다.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="다시-스마트폰으로-돌아와서">다시 스마트폰으로 돌아와서</h3>
 <ul>
-<li>그리고 권력과 위선자의 존재가 집단의 전체적 협력을 안정적으로 유지하는데 역할을 한다는 연구도 있음.</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="위선자의-존재가-집단-전체의-이타성에-미치는-영향">※ 위선자의 존재가 집단 전체의 이타성에 미치는 영향</h3>
-
-<img data-src="img/hypocrisy.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="개인적-자아와-집단적-자아">개인적 자아와 집단적 자아</h3>
-
-<img data-src="https://www.science.org/cms/10.1126/science.1246850/asset/411fb866-e4c7-4e7b-adc4-db6b9ac5c195/assets/graphic/344_603_f1.jpeg" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://www.science.org/doi/full/10.1126/science.1246850">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="개인적-자아와-집단적-자아-1">개인적 자아와 집단적 자아</h3>
-
-<img data-src="https://www.science.org/cms/10.1126/science.1246850/asset/39f8eaae-47ba-4b56-a8f4-25d7940664a5/assets/graphic/344_603_f2.jpeg" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://www.science.org/doi/full/10.1126/science.1246850">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="개인적-자아와-집단적-자아-2">개인적 자아와 집단적 자아</h3>
+<li>두 메이저 회사들의 ‘불합리한’ 구조를 대하는 접근법 차이</li>
+<li>notch는 각종 카메라와 센서라는 적응 구조 때문에 생기는 ’불합리’이자 부산물
 <ul>
-<li>집단 선택의 힘이 강한 지역에서 집단적 자아가 많이 나타남</li>
-<li>스타트업에서는 두 가지 자아를 잘 활용해야 한다.</li>
-<li>개인적 자아와 집단적 자아가 추구하는 가치를 잘 align 시키는 것이 가장 중요하다.(창업자가 해야할 일)</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="진실성">2. 진실성</h3>
-<ul>
-<li>이타적인 마인드로 서로에게 상처가 되지 않기 위해서 자신의 생각을 쉽게 주장하지 못하고</li>
-<li>일이 잘못 진행되어 가는 것처럼 느껴져도 다수가 이야기하는대로 따라가는 조직은 건강하지 못하다.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="진실이-막히는-순간">진실이 막히는 순간</h3>
-
-<img data-src="img/asch.png" class="r-stretch"><div class="footer">
-<p>Asch, 1955</p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="확증-편향">확증 편향</h3>
-<p>자신이 가지고 있는 기존 믿음이나 가설과 부합하는 정보만을 찾고, 그렇기 않으면 그에 맞게 정보를 해석하려는 심리적 경향을 말한다. 인지편향의 한 유형으로 대표적인 귀납 추론의 오류 중 하나이다.</p>
-</section>
-<section class="slide level2">
-
-<h3 id="침묵의-나선">침묵의 나선</h3>
-
-<img data-src="https://www.researchgate.net/profile/Oberiri-Apuke/publication/329543200/figure/fig1/AS:702396187549699@1544475709961/Spiral-of-Silence-Model-Aryal-2014-Noelle-Neumann-1993.ppm" class="r-stretch"><div class="footer">
-<p>Noelle-Neumann, 1993 : <a href="https://www.researchgate.net/figure/Spiral-of-Silence-Model-Aryal-2014-Noelle-Neumann-1993_fig1_329543200">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="동조와-확증편향을-막기-위한-방법">동조와 확증편향을 막기 위한 방법</h3>
-
-<img data-src="https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/rcmm20/2017/rcmm20.v084.i01/03637751.2016.1231334/20170126/images/medium/rcmm_a_1231334_f0001_b.gif" class="r-stretch"><div class="footer">
-<p>Lee E-J et al, 2017 : <a href="https://www.tandfonline.com/doi/full/10.1080/03637751.2016.1231334">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="명의-성난-사람들">12명의 성난 사람들</h3>
-<p><img data-src="https://bizroasting.files.wordpress.com/2016/01/12_angry_men.jpg?w=816"></p>
-<aside class="notes">
-<p>살인 혐의를 쓴 한 소년에 대한 재판에서 11명의 배심원이 그의 유죄를 인정하는데 단 한 명이 반론을 제기, 토론을 하는 내용</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section class="slide level2">
-
-<h3 id="동조와-확증편향을-막기-위한-방법-1">동조와 확증편향을 막기 위한 방법</h3>
-<ul>
-<li>의문은 덮어두지 말 것, 진실 부채를 쌓지 말라.
-<ul>
-<li>덮어두면 부패한다.</li>
+<li>S사 : 불합리를 없애자! -&gt; infinity display</li>
+<li>A사 : 불합리를 다른 방식으로 ‘적응적으로’ 만들자 -&gt; dynamic island</li>
 </ul></li>
-<li>합리적이고 양적인 근거를 가지고 끊임없이 설득해야함.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="신속성">3. 신속성</h3>
+<h3 id="스타트업에서는">스타트업에서는?</h3>
 <ul>
-<li><p>좋은 팀 안에서는 <strong>이타적인 의도</strong>를 가지고 <strong>진실된 정보</strong>들이 유통된다.</p></li>
-<li><p>여기에 한 가지가 더 필요하다.</p></li>
-<li><p>정보가 빠르게 돌아야 경쟁력 있는 팀이 될 수 있다.</p></li>
+<li>기능구조를 기획하다 보면 마주치게 되는 부산물들을 어떻게 처리할 것인가?</li>
+<li>스타트업에서는 제한 사항이 더 많기 때문에 이런 적응, 부산물 개념을 더 잘 이해해야됨.</li>
+<li>오히려 기회가 찾아올 수도 있음.</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<div class="r-stack">
-<p>Loading</p>
-</div>
-</section>
+<h3 id="gather.town의-사례">Gather.town의 사례</h3>
+
+<img data-src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/245755324_213243710920792_804722949465399054_n.jpg?stp=dst-jpg_p180x540&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=e3f864&amp;_nc_ohc=RPwkmGBt51QAX_CLwWR&amp;_nc_ht=scontent-ssn1-1.xx&amp;oh=00_AT-pt7Jo3VNkehrbhlGsfEkrAe7UmUEg2RTxlvY3x4MYZQ&amp;oe=633FC80B" class="r-stretch"></section>
 <section class="slide level2">
 
-
-<img data-src="https://c.tenor.com/DPEfCqnChk0AAAAi/loading-slow-net.gif" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="즉각적인-반응과-팀-본딩과정">즉각적인 반응과 팀 본딩과정</h3>
-
-<img data-src="https://images.ctfassets.net/lzny33ho1g45/2J4pHtKLrY0KfF7mtWdRPK/6eb384c1109eecdc64f18330c8b639e7/Disable_Slack_typing_notifications_6.png?w=1400" class="r-stretch"></section>
-<section class="slide level2">
-
-<p><img data-src="https://images.ctfassets.net/lzny33ho1g45/4LAgGSV25JteXQEb6c7ABj/d3c4ca89c27291f76477f09339eda751/Disable_Slack_typing_notifications_2.png?w=1400" width="1000"></p>
-<p><img data-src="https://images.ctfassets.net/lzny33ho1g45/1pG6dXgN75mjEmOTmRT2VF/299a9b96ad272682677eb001260f221f/Disable_Slack_typing_notifications_3.png?w=1400" width="1000"></p>
-</section>
-<section class="slide level2">
-
-<h3 id="협력의-매개로서-도파민">협력의 매개로서 도파민</h3>
-
-<img data-src="img/dopamine_loop.png" class="r-stretch"><div class="footer">
-<p>참고자료 : <a href="https://dergipark.org.tr/en/download/article-file/607734">[Link]</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="즉각적인-고객-대응의-필요성">즉각적인 고객 대응의 필요성</h3>
+<h3 id="gather.town의-사례-1">Gather.town의 사례</h3>
 <ul>
-<li><em>“고객이 00분째 기다리고 있습니다.”</em>(채널톡 사례)</li>
-<li>더 좋은 사용자 경험을 만들기 위해서 고객에 대한 즉각적인 대응은 필수적임</li>
-<li>그만큼 내부 팀원들과의 반응도 즉각적으로</li>
+<li>본질은 화상 커뮤니케이션 + 아바타 공간</li>
+<li>영상 코덱 기술과 네트워크 기술을 발전시킨 기존 화상 솔루션 기업들의 후발주자로서 봉착한 문제
+<ul>
+<li>큰 수의 N:N 통신은 다루기 힘듦</li>
+</ul></li>
+<li>크지 않은 그룹으로 통신을 쪼개야 하며 그러면서도 전체 인원이 한 자리에 있음을 느낄 수 있어야 함.
+<ul>
+<li>참여자들이 아바타의 물리적 거리를 기반으로 하여 주변의 사람들끼리만 화상 통신을 하는 구조로 대규모 통신이 안되는 것이 단점이 아니라 자연스러운 커뮤니케이션으로 받아들이게 만듦</li>
+</ul></li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="신속한-커뮤니케이션이-필요한-순간">신속한 커뮤니케이션이 필요한 순간</h3>
-
-<img data-src="http://scienceoflove.co.kr/wp-content/uploads/2016/10/sol162_illu_01.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="agile-manifesto">Agile manifesto</h3>
-
-<img data-src="img/agile_manifesto.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="스타트업-방법론들">스타트업 방법론들</h3>
+<h3 id="다음-시간에는">다음 시간에는…</h3>
 <ul>
-<li>린 스타트업, 애자일, 스크럼 등 방법론을 적용하는가가 중요하지 않다.</li>
-<li>결국은 팀내에서 즉각적으로 사회적 상호작용에 의한 보상과 프로덕트에 의한 보상, 그리고 고객과의 상호작용에 의한 보상의 주기를 짧게 가져가는 것이 스타트업 방법론의 핵심!</li>
-<li>구성원이 이타적인 의도를 가지고 진실된 정보를 신속하게 나누고 있는가를 각각의 기준에 의해 판단하면 됨.</li>
-<li>구성원들의 경험까지 세분화하고 관리하는 것이 필요.</li>
+<li>해당 기능이 <strong>왜</strong> 필요한가에 대한 답을 얻기 위해 인간의 근본 동기에 대해 알아볼 예정</li>
 </ul>
 </section>
 <section class="slide level2">
 
-<h3 id="hebbian-rule">Hebbian rule</h3>
-
-<img data-src="https://i.pinimg.com/originals/1d/12/48/1d1248c551f4d4821264ed0aef452fe5.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="다음시간에는">다음시간에는…</h3>
-<ul>
-<li>적응(adaptation)개념과 적응적(adaptive)인 서비스에 대해서 알아봅시다.</li>
-</ul>
 <div class="footer footer-default">
 <p>UX와 서비스 기획</p>
 </div>
@@ -870,20 +746,20 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="l5_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="l5_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
