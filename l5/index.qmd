@@ -248,7 +248,7 @@ resources:
 
 ### 불합리성 in 합리성, 합리성 in 불합리성 #2
 
-![](http://www.seehint.com/catalog/2013/2013_06/%EC%98%A4%EC%A7%95%EC%96%B4%EC%99%80%EC%82%AC%EB%9E%8C.png)
+![](img/eyes.png)
 
 
 --- 
