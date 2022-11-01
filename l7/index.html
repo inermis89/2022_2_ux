@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.0.38">
+
+  <meta name="author" content="Minseop Lee(Programs in Cognitive Science, SNU)">
+  <title>L7. 서비스의 맥락성</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="styles.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">L7. 서비스의 맥락성</h1>
+  <p class="subtitle">서비스의 맥락성을 이루는 요소들과 사례</p>
+  <p class="author">Minseop Lee(Programs in Cognitive Science, SNU)</p>
+  <p class="date">2022-10-18(Tue)</p>
+</section>
+
+<section class="slide level2">
+
+<h3 id="강의-목표">강의 목표</h3>
+<ul>
+<li>서비스의 맥락성을 이루는 요인들을 이해한다.</li>
+<li>그 중 인간과 서비스의 진화에서 문화의 힘의 영향에 대해 이해한다.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="지난-강의-내용">지난 강의 내용</h3>
+<ul>
+<li>생애사 이론과 근본동기 이론</li>
+<li>근본동기를 활용하는 서비스 기획 사례들</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="서비스의-맥락성을-구성하는-요소">서비스의 맥락성을 구성하는 요소</h3>
+<ul>
+<li>부산물</li>
+<li><strong>문화학습에서 사용자 편향</strong></li>
+<li>다른 서비스와의 관계</li>
+</ul>
+<!-- - 벤다이어그램 -->
+</section>
+<section class="slide level2">
+
+<h3 id="서비스의-부산물">서비스의 부산물</h3>
+<ul>
+<li>부산물에 대한 정의
+<ul>
+<li>원래 풀고자 했던 문제는 아니나 본 문제를 해결하는 과정 혹은 결과 발생한 것들</li>
+<li>부산물이 도움이 되지 않을 수도 있고 도움이 될 수도 있음.</li>
+<li>배보다 배꼽이 더 클 수 있음.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="서비스의-부산물-1">서비스의 부산물</h3>
+<ul>
+<li>부산물은 해결해야하는 ’문제’일 수도 있지만</li>
+<li>잘 활용하면 폭발적인 힘을 가지게 될 수도 있음.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="서비스에-영향을-주는-사용자-편향">서비스에 영향을 주는 사용자 편향</h3>
+<ul>
+<li>문화의 확산은 바로 사회적 전달을 통해서 이뤄진다.</li>
+<li>그러나 이 사회적 전달은 투명하게 일어나지 않는다.</li>
+<li>다른 사회적 원천으로부터 전달되는 문화적 정보는 사회적 전달 과정에서 각종 편향에 의해 왜곡되고 굴절된다.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="문화적-전달의-힘">문화적 전달의 힘</h3>
+<h4 id="hms-erebus-and-terror1845">HMS <em>Erebus</em> and <em>Terror</em>(1845)</h4>
+
+<!-- 1845년 북서항로 개척을 위한 탐사를 떠났음. 통조림까지 있었음 -->
+<img data-src="img/power-of-culture.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="문화적-전달의-힘-1">문화적 전달의 힘</h3>
+<h4 id="sir-john-ross의-탐사">Sir John Ross의 탐사</h4>
+<ul>
+<li>에레버스와 테러호보다 15년 먼저 킹윌리엄섬에서 살아남은 탐사대</li>
+<li>22명으로 훨씬 적은 수</li>
+<li>현지인인 이누이트족과 친구가 되어 거래관계를 맺었음.
+<ul>
+<li>방한법, 사냥법, 이동법 등을 배움</li>
+</ul></li>
+<li>4년 동안 생존한 뒤 22명 중 19명을 데리고 영국으로 돌아감.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="두-사례의-차이점">두 사례의 차이점</h3>
+<ul>
+<li>15년 앞선 탐사대가 유전적으로 더 우월하다는 설명은 합리적이지 않음</li>
+<li>현대의 인간이 살아가는데에는 주요 기관(organ)들 외에도 문화적 요소가 반드시 필요하다.</li>
+<li>기술의 편리함에 ’의존’하게 되는 문화적 인간</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="인간의-문화적-학습을-위한-유기체적-특성">인간의 문화적 학습을 위한 유기체적 특성</h3>
+<ul>
+<li>몸 밖에서 소화시키기 : 조리, 화식</li>
+<li>신체적 힘을 도구로 대체함으로써 힘 대신 도구를 만드는 정교함이 나타남.</li>
+<li>빠른 속도를 포기하고 인내하는 달리기 능력을 갖추게 됨</li>
+</ul>
+
+<img data-src="img/myelination.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="카카오-사태">카카오 사태</h3>
+
+<img data-src="https://img.hankyung.com/photo/202210/ZN.31529008.1.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="국가간-마찰에-의해서도-발생">국가간 마찰에 의해서도 발생</h3>
+<ul>
+<li>일본과의 갈등으로 인해 발생한 무역분쟁</li>
+<li>산업의 기간이 되는 소재, 부품, 장비 분야에 대한 백색국가 지정 해제</li>
+<li>소재, 부품, 장비에 대한 국산화 노력</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="유기체와-문화의-관계">유기체와 문화의 관계</h3>
+<ul>
+<li>앞선 강의에서 ’낙농업’과 ’젖당분해효소’의 공진화 관계에 대해서 설명</li>
+<li>서로 영향을 주는 ’정적 되먹임 고리(Positive feedback)’가 형성</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="문화적-인간이-진화할-수-있었던-이유">문화적 인간이 진화할 수 있었던 이유</h3>
+<ul>
+<li>초기 형태의 사회적 학습(즉, 따라하기)이 가능하면서 문화의 자본들이 무리안에 쌓이게 됨</li>
+<li>이러한 환경에서는 문화적 요소들을 잘 습득하는 개체가 유리하다.</li>
+<li>사냥과 같은 생태적 필요성에 의한 행동들 외에도 노래(언어), 춤(몸의 동작) 등의 집단을 이루는데 필요한 문화적 요소에 대해 탁월한 개체들이 매력적인 상대로서 생존과 번식에 유리하게 되고,</li>
+<li>이에 따라 문화적 요소들도 함께 융성하게 되면서 정적 되먹임 고리 형성</li>
+<li>그러나 이러한 정적 되먹임 고리로 유기체와 문화의 진화에 대해 모두 설명할 수 있을까?</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="흔한-정적-되먹임-고리-사례">흔한 정적 되먹임 고리 사례</h3>
+<ul>
+<li>알베도(Albedo)와 극지의 빙하 면적의 관계</li>
+<li>출산과정에서 옥시토신 분비</li>
+<li>정적 되먹임 고리의 과정은 언젠가 끝이 나는 과정
+<ul>
+<li>빙하 면적이 다 녹거나, 출산이 이루어질때</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="되먹임-고리의-종결">되먹임 고리의 종결</h3>
+<ul>
+<li>문화의 발전은 계속해서 일어나는데 그에 대응하는 인간의 유기체적인 진화가 일어나고 있는가?</li>
+<li>문화의 발전의 속도와 유기체 진화의 속도의 차이가 발생</li>
+<li>문화가 인간의 유기체적인 특성에 도움을 주는 쪽이 아닌 인간의 유기체적인 특성을 착취하는 구조가 발생</li>
+<li>문화가 인간의 유기체적인 특성에 의존하지 않고도 발전할 수 있게 되면 더욱 가속화 될 것.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="nosedive">Nosedive</h3>
+<iframe src="https://www.youtube.com/embed/rlL3CO8c87Q" width="1000" height="600">
+</iframe>
+<div class="footer">
+<p>영상링크 : <a href="https://www.youtube.com/watch?v=rlL3CO8c87Q">[Link]</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="중국의-사회신용제도">중국의 사회신용제도</h3>
+
+<img data-src="https://www.visualcapitalist.com/wp-content/uploads/2019/09/china-social-credit-score-prev.jpg" class="r-stretch"></section>
+<section id="중국의-사회신용제도-1" class="slide level2 scrollable">
+<h2>중국의 사회신용제도</h2>
+<div class="column">
+<p><img data-src="https://i.kym-cdn.com/photos/images/facebook/002/216/984/c96.png"></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="the-game-of-life">The game of life</h3>
+<ul>
+<li>신용정보, 지불이행능력, 인적사항, 행동과 구매 패턴, 대인관계 등 에 대한 자료를 바탕으로 개인에 대해 판단</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="돈으로-살-수-없는-것들-수치화-할-수-없는-것들">돈으로 살 수 없는 것들 = 수치화 할 수 없는 것들</h3>
+<div class="columns">
+<div class="column">
+<ul>
+<li>플랫폼 의존성↑,</li>
+<li>수치화 할 수 있는 것들↑</li>
+<li>수치화된 정보를 통한 평판의 형성
+<ul>
+<li>한번도 만나보지 않은 지구 반대편에 살고 있는 에어비엔비 호스트의 평점을 알수 있고 그것을 통해 그사람을 평가할 수 있음.</li>
+</ul></li>
+<li>하지만 인간의 얼굴을 통해 다가온다. ex. 당근마켓의 ‘매너온도’</li>
+<li>다음 단계는 무엇일까?</li>
+</ul>
+</div><div class="column">
+<p><img data-src="https://mblogthumb-phinf.pstatic.net/MjAyMjA5MjFfMTM2/MDAxNjYzNzMxNTY3NDkw.BSlaDh1yaReU0BR-mvlEd_8HE8_DpZgJyRoKA64Hmkwg.-_sr8jmMw_5ZQo7Ao6xNJ5XTE2_wi25lSuvXNEOH1mgg.JPEG.zyoma/SE-f2d333bc-c3d2-41a4-aaa5-cf722adf8a3b.jpg?type=w800"></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="배달의-민족은-배달하지-않는다.">배달의 민족은 배달하지 않는다.</h3>
+
+<img data-src="https://image.yes24.com/goods/92496552/XL.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="문화적-전달-문화를-지탱하는-미시적-과정">문화적 전달 = 문화를 지탱하는 미시적 과정</h3>
+<ul>
+<li>현재 상태의 거대한 문화 현상도 엄청나게 많은 문화적 정보의 전달과정을 거치면서 변형되고 축적되었음.</li>
+<li>문화적 정보의 전달에 영향을 주는 요인(편향)들</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="문화적-정보가-전달되는-과정">문화적 정보가 전달되는 과정</h3>
+<ul>
+<li>정보를 전달받을 사람은 정보의 원천을 고를 수 있음(choose to recieve)</li>
+<li>전달할 정보를 부호화하고 인출(encode and retrieve)</li>
+<li>정보를 전달할 사람음 정보를 받을 사람을 고를 수 있음(choose to transmit)</li>
+</ul>
+<p>https://akjournals.com/view/journals/2055/aop/article-10.1556-2055.2022.00024/article-10.1556-2055.2022.00024.xml</p>
+</section>
+<section class="slide level2">
+
+<h3 id="편향의-종류">편향의 종류</h3>
+<ul>
+<li>편향된 전달
+<ul>
+<li>내용 편향</li>
+<li>맥락 편향
+<ul>
+<li>명성 편향</li>
+<li>순응 편향(빈도 편향)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="편향된-전달">편향된 전달</h3>
+<ul>
+<li>리처슨 &amp; 보이드 &lt;유전자만이 아니다&gt;</li>
+<li>유전자-문화 공진화이론</li>
+</ul>
+<!-- 유전자만이 아니다 책 표지 -->
+</section>
+<section class="slide level2">
+
+<h3 id="내용-편향">내용 편향</h3>
+<blockquote>
+<p>개인은 콘텐츠를 기반으로 일부 문화적 변형을 배우거나 기억할 가능성이 더 크다. 콘텐츠 기반 편향은 대안적 변이와 관련된 비용 및 이점의 계산 또는 인지 구조가 일부 변이를 더 쉽게 배우거나 기억할 수 있도록 하기 때문에 발생할 수 있다.</p>
+</blockquote>
+<ul>
+<li>전달되는 문화 콘텐츠가 얼마나 매력적인가?</li>
+<li>기억하기 쉬운가?</li>
+<li>전달하고 싶게 만드는가?</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="내용-편향-검증">내용 편향 검증</h3>
+<iframe src="https://www.youtube.com/embed/onVxp40MisI" width="1000" height="600">
+</iframe>
+<div class="footer">
+<p><a href="https://www.youtube.com/watch?v=onVxp40MisI">영상링크</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="내용-편향-검증-1">내용 편향 검증</h3>
+<div class="columns">
+<div class="column">
+<p><img data-src="img/content-bias1.png"></p>
+</div><div class="column">
+<p><img data-src="img/content-bias2.png"></p>
+</div>
+</div>
+<div class="footer">
+<p>참고자료 : <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/pdfdirect/10.1348/000712605X85871?casa_token=9Py7BV0AhtgAAAAA:1c2rRHzEr6GFlj_OokHM8YMyEp4HXQyg7EX4plks8MylANOQ3j6RjMf06wU6I982jz9-dWSN5fIZMA">Link</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="내용-편향만이-아니다">내용 편향만이 아니다</h3>
+<ul>
+<li>문화적 정보가 전달될 때, 콘텐츠의 내용 외에도 콘텐츠가 전달되는 사회적 맥락이 더 중요하게 작용할 수도 있음.</li>
+</ul>
+<div class="footer">
+<p>참고자료 : <a href="https://pubmed.ncbi.nlm.nih.gov/26181460/">Link</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="명성-편향">명성 편향</h3>
+<blockquote>
+<p>특성을 나타내는 개인의 관찰 가능한 특성을 기반으로 한 특성의 선택. 그럴듯한 모델 기반 편향에는 성공하거나 권위 있는 개인을 모방하는 성향과 자신과 유사한 개인을 모방하는 성향이 포함된다.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h3 id="명성-편향-1">명성 편향</h3>
+
+<img data-src="img/prestige.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="무엇이-마이클-조던의-성공에-영향을-미쳤을까">무엇이 마이클 조던의 성공에 영향을 미쳤을까?</h3>
+<ul>
+<li>여러 요소들이 있을 수 있음</li>
+<li>분석하는것은 어려움.</li>
+<li>따라하는 것은 쉬움.</li>
+<li>조던의 모든 부분을 따라하게 됨</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="명성과-권력은-다르다.">명성과 권력은 다르다.</h3>
+<ul>
+<li>명성은 자발적으로 존중을 이끌어내고 따라하고 싶게 만듦으로써 명망가의 아이들은 사망률이 낮고 더 젊어서 결혼할 확률이 높다.</li>
+<li>권력가는 그렇지 않다.</li>
+<li>좋은 이미지를 가진 사람을 광고로 쓰는 이유</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="베르테르-효과">베르테르 효과</h3>
+<ul>
+<li>유명인의 자살을 따라하게 되는 현상</li>
+<li>유명인의 자살에 대한 언론 보도 준칙</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="순응-편향">순응 편향</h3>
+<blockquote>
+<p>선택의 근거로 문화적 변이의 보편성 또는 희소성을 사용하는 것. 예를 들어, 가장 유리한 변형이 가장 일반적일 가능성이 높다. 그렇다면 적합성 편향은 올바른 변형을 쉽게 얻을 수 있는 방법이다</p>
+</blockquote>
+<ul>
+<li>자기 자신의 판단에 의하기보다는 주위에 있는 사람들과 같은 행동을 하는 경향</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="순응-편향-사례">순응 편향 사례</h3>
+
+<img data-src="https://i.ytimg.com/vi/gsOxHEuCaLA/maxresdefault.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="순응-편향-사례-1">순응 편향 사례</h3>
+<ul>
+<li>외국의 한 도시</li>
+<li>붐비는 거리에서 식당 열곳 중 한곳을 선택하려고 한다.</li>
+<li>한 곳에는 손님이 40명, 여섯곳에는 10명씩, 세곳에는 아무도 없음.</li>
+<li>어디를 선택할 것인가?</li>
+<li>온라인 환경에서 각종 리뷰에 목숨을 거는 이유는 그만큼 순응편향이 강하다는 것을 보여주는 사례</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="다음-시간에는">다음 시간에는…</h3>
+<ul>
+<li>다른 서비스들과의 관계에 대해 알아보고,</li>
+<li>사례중심으로 전체 내용을 리뷰할 예정</li>
+</ul>
+<div class="footer footer-default">
+<p>UX와 서비스 기획</p>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>
