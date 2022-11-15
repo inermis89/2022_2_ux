@@ -185,7 +185,7 @@ resources:
 
 ---
 
-### 돈으로 살 수 없는 것들 = 수치화 할 수 없는 것들
+## 돈으로 살 수 없는 것들 = 수치화 할 수 없는 것들 {.smaller}
 
 
 ::: {.columns}
@@ -225,7 +225,9 @@ resources:
 - 전달할 정보를 부호화하고 인출(encode and retrieve)
 - 정보를 전달할 사람음 정보를 받을 사람을 고를 수 있음(choose to transmit)
 
-https://akjournals.com/view/journals/2055/aop/article-10.1556-2055.2022.00024/article-10.1556-2055.2022.00024.xml
+::: footer
+참고자료 : [Link](https://akjournals.com/view/journals/2055/aop/article-10.1556-2055.2022.00024/article-10.1556-2055.2022.00024.xml)
+:::
 
 ---
 
