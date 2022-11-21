@@ -179,7 +179,7 @@ resources:
 - 상관관계 분석이라는 생각 도구를 구현해주는 도구들
   - 엑셀, R, Python... (손으로도 가능, 눈으로는 글쎄...)
 
-<!-- $$ {\displaystyle r_{XY}={{{\sum _{i}^{n}\left(X_{i}-{\overline {X}}\right)\left(Y_{i}-{\overline {Y}}\right)} \over {n-1}} \over {\sqrt {{\sum _{i}^{n}\left(X_{i}-{\overline {X}}\right)^{2}} \over {n-1}}} {\sqrt {{\sum _{i}^{n}\left(Y_{i}-{\overline {Y}}\right)^{2}} \over {n-1}}} }}$$ -->
+
 
 ![](img/correlation.svg)
 
