@@ -10,7 +10,7 @@ format:
     chalkboard: 
       buttons: false
     preview-links: auto
-    css: styles.css
+    css: style.css
     footer: UX와 서비스 기획
 resources:
   - demo.pdf
@@ -404,10 +404,10 @@ resources:
 
 ---
 
-### 심리학 실험 도구들 
+### 심리학 실험 도구 
 
 - 기만 실험
-- 프라이밍
+
 
 
 ---
